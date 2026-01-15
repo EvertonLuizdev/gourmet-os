@@ -100,7 +100,7 @@ export function AppLayout() {
                             <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-orange-500 rounded-full border-2 border-white"></span>
                         </button>
 
-                        <div className="h-8 w-8 rounded-full bg-orange-100 flex items center justify-center border border-orange-200">
+                        <div className="h-8 w-8 rounded-full bg-orange-100 flex items-center justify-center border border-orange-200">
                             <span className="text-xs font-bold text-orange-700">EL</span>
                         </div>
                     </div>

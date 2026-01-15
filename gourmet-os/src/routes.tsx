@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { SignIn } from './pages/SignIn';
 import { AppLayout } from './layouts/AppLayout';
+import { Dashboard } from './pages/Dashboard';
 
 export const router = createBrowserRouter([
   {
@@ -15,25 +16,7 @@ export const router = createBrowserRouter([
     children: [
         {
             path: '/admin',
-            element: (
-                // Conteúdo da Dashboard (Temporário, depois criamos um arquivo Dashboard.tsx)
-                <div className="grid grid-cols-3 gap-4">
-                     <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                        <h3 className="text-slate-500 text-sm font-medium">Faturamento do Dia</h3>
-                        <p className="text-3xl font-bold text-slate-900 mt-2">R$ 2.450,00</p>
-                        <span className="text-green-600 text-xs font-medium">+12% que ontem</span>
-                     </div>
-                     <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                        <h3 className="text-slate-500 text-sm font-medium">Pedidos Ativos</h3>
-                        <p className="text-3xl font-bold text-slate-900 mt-2">12</p>
-                        <span className="text-orange-600 text-xs font-medium">4 na cozinha</span>
-                     </div>
-                     <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                        <h3 className="text-slate-500 text-sm font-medium">Ticket Médio</h3>
-                        <p className="text-3xl font-bold text-slate-900 mt-2">R$ 84,90</p>
-                     </div>
-                </div>
-            )
+            element: <Dashboard />
         },
         {
             path: '/orders',
