@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { SignIn } from './pages/SignIn';
 import { AppLayout } from './layouts/AppLayout';
 import { Dashboard } from './pages/Dashboard';
+import { Menu } from './pages/Menu';
 
 export const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
         },
         {
             path: '/menu',
-            element: <h1 className="text-2xl font-bold text-slate-800">Tela de Cardápio (Em construção)</h1>
+            element: <Menu />
         },
         {
             path: '/settings',
