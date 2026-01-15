@@ -3,6 +3,7 @@ import { SignIn } from './pages/SignIn';
 import { AppLayout } from './layouts/AppLayout';
 import { Dashboard } from './pages/Dashboard';
 import { Menu } from './pages/Menu';
+import { Orders } from './pages/Orders';
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ export const router = createBrowserRouter([
         },
         {
             path: '/orders',
-            element: <h1 className="text-2xl font-bold text-slate-800">Tela de Pedidos (Em construção)</h1>
+            element: <Orders />
         },
         {
             path: '/menu',
