@@ -4,6 +4,7 @@ import { AppLayout } from './layouts/AppLayout';
 import { Dashboard } from './pages/Dashboard';
 import { Menu } from './pages/Menu';
 import { Orders } from './pages/Orders';
+import { Settings } from './pages/Settings';
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ export const router = createBrowserRouter([
         },
         {
             path: '/settings',
-            element: <h1 className="text-2xl font-bold text-slate-800">Tela de Configurações (Em construção)</h1>
+            element: <Settings />
         }
     ]
   },
